@@ -2,7 +2,7 @@
 
 <web-app>
 
-    <display-name>iTalkerXy</display-name>
+    <display-name>iTalker</display-name>
 
     <servlet>
         <servlet-name>ITalkerApiServlet</servlet-name>
@@ -26,5 +26,6 @@
         <servlet-name>ITalkerApiServlet</servlet-name>
         <!--访问路径-->
         <url-pattern>/api/*</url-pattern>
+
     </servlet-mapping>
 </web-app>
