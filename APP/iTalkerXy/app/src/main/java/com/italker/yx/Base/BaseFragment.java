@@ -1,4 +1,4 @@
-package com.italker.common;
+package com.italker.yx.Base;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -9,16 +9,17 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 /**
  * Created by Xia_焱 on  2020/1/7.
  * 邮箱：XiahaotianV@163.com
  */
-public abstract class FragmentX extends androidx.fragment.app.Fragment {
+public abstract class BaseFragment extends androidx.fragment.app.Fragment {
 
     protected View mRoot;
-
+    protected Unbinder mRootUnBinder;
 
     @Override
     public void onAttach(@NonNull Context context) {
@@ -79,7 +80,7 @@ public abstract class FragmentX extends androidx.fragment.app.Fragment {
      * @param root
      */
     protected void initWidget(View root) {
-
+        mRootUnBinder =  ButterKnife.bind(this,root);
     }
 
     /**

@@ -34,9 +34,7 @@ dependencies {
     implementation "com.google.android.material:material:1.0.0"
 
 
-    //一些依赖库文件
-    implementation "com.android.support:appcompat-v7:$rootProject.ext.supportVersion"
-    implementation "com.android.support:design:$rootProject.ext.supportVersion"
+
 
     //适配工具类
     implementation "com.readystatesoftware.systembartint:systembartint:$rootProject.ext.Systembartint"
@@ -47,7 +45,9 @@ dependencies {
     // compile "com.getui:sdk:$rootProject.ext.getuiVersion"
 
 
-
+    //注解框架
+    implementation "com.jakewharton:butterknife:$rootProject.ext.butterknifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterknifeVersion"
 
     implementation project(path: ':Common')
 

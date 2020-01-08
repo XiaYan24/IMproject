@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment;
 
 import java.util.List;
 
-import butterknife.BindView;
+
 
 /**
  * Created by Xia_焱 on  2020/1/7.
@@ -22,7 +22,9 @@ public abstract class ActivityX extends AppCompatActivity {
         initWidows();
 
         if (initArgs(getIntent().getExtras())) {
-            getContentLayoutId();
+
+            setContentView(getContentLayoutId());
+
             initWidget();
             initData();
         } else {
