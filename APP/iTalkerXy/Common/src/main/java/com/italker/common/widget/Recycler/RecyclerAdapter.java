@@ -224,8 +224,8 @@ public abstract class RecyclerAdapter<Data> extends RecyclerView.Adapter<Recycle
 
 
     public interface AdapterListener<Data> {
-        void onItemClick(RecyclerAdapter.ViewHolder holder, Data data);
 
+        void onItemClick(RecyclerAdapter.ViewHolder holder, Data data);
         void onItemLongClick(RecyclerAdapter.ViewHolder holder, Data data);
     }
 }
